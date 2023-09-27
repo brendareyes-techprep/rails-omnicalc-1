@@ -7,28 +7,28 @@
     APR
   </dt>
   <dd>
-    <%= @the_apr %>
+    <%= @the_apr.round(4) %>%
   </dd>
 
   <dt>
     Number of years
   </dt>
   <dd>
-    <%= @the_years %>
+    <%= @the_years.to_i %>
   </dd>
 
   <dt>
     Principal
   </dt>
   <dd>
-    <%= @the_pv %>
+    <%= number_to_currency(@the_pv.round(2)) %>
   </dd>
 
   <dt>
     Payment
   </dt>
   <dd>
-    <%= @the_result %>
+    <%= number_to_currency(@the_result.round(2)) %>
   </dd>
 </dl>
 
