@@ -12,7 +12,7 @@ class MoneyController < ApplicationController
     render({:template => "square_root_new"})
   end
   def fig
-    render({:template => ""})
+    render({:template => "square_root_results"})
   end
   def grape
     render({:template => ""})
